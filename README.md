@@ -1,2 +1,2 @@
-# introdu-o_javascript
+# Introducao_Javascript
 Primeiros passos ao JavaScript
