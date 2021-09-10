@@ -1,2 +1,2 @@
 # Introducao_Javascript
-Primeiros passos ao JavaScript
+Primeiros passos em JavaScript, iniciando e testando conhecimentos básico.
