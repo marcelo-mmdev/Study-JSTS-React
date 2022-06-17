@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+    <script>
+        const nome = prompt('Digite Nome');
+        document.body.innerHTML += 'Escrever na tela';
+        document.body.innerHTML += 'Escrever mais coisas na tela';
+        document.body.innerHTML += '<br /> Escrever quebra de linha <br />';
+        document.body.innerHTML += `<br />`;
+        document.body.innerHTML += `Seu nome é: <strong>${nome}.</strong><br />`;
+        document.body.innerHTML += `Seu nome tem <strong>${nome.length}.</strong> letras <br />`;
+        document.body.innerHTML += `A segunda letra do nome <strong>${nome.toLocaleUpperCase()[1]}.</strong><br />`;
+        document.body.innerHTML += `Qual o primeiro indice letra L do nome? <strong>${nome.indexOf('l')}</strong><br />`;
+        document.body.innerHTML += `Qual o ultimo indice da letra A do nome? <strong>${nome.lastIndexOf('l')}</strong><br />`;
+        document.body.innerHTML += `As últimas 3 letras do nome são: <strong>${nome.slice(-3)}</strong><br />`;
+        document.body.innerHTML += `Só as palavras do nome <strong>${nome.split(' ')}</strong><br />`;
+        document.body.innerHTML += `Nome letras maiúsculas <strong>${nome.toLocaleUpperCase()}</strong><br />`;
+        document.body.innerHTML += `Nome letras minúsculas <strong>${nome.toLocaleLowerCase()}</strong><br />`;
+    </script>
+</body>
+</html>
