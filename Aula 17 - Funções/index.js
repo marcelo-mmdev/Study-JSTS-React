@@ -2,12 +2,24 @@ function soma(x, y){
     const resultado = x + y;
     return resultado;
 };
+////////////////////////////////////////////////////
+function somaLegal(x = 1, y = 1){
+    // ele só manda esse valor de x e y
+    // se não passar não nada na execução
+    const resultado = x + y;
+    return resultado;
+};
 
+console.log(somaLegal());
+
+console.log(somaLegal(1, 2))
+
+////////////////////////////////////////////////////
 console.log(soma(5, 5));
 console.log(soma(15, 25));
 console.log(soma(2, 5));
 
-const resultado = soma();
+const resultado = soma(8, 8);
 console.log(soma());
 console.log(resultado);
 
