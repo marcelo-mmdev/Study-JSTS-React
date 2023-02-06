@@ -4,7 +4,9 @@
     >=      maior que ou igual a
     <       menor que
     <=      menor que ou igual a
-    ==      igualdade
+    Não usar  ==      igualdade
     ===     igualdade estrita
+    Não usar  !=      diferente
+    !===    diferente estrita
 
  */
