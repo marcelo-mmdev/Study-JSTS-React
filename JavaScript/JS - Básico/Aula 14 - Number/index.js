@@ -14,4 +14,4 @@ let num3 = 18.454564654
 // console.log(Number.isInteger(num2)); // false ou true
 
 let temp = num1 * 'erro';
-console.log(Number.isNaN(temp)); // Verifica se e NaN
+console.log("Verifica se e NaN:",Number.isNaN(temp)); // Verifica se e NaN

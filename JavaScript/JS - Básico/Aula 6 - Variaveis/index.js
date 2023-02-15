@@ -13,7 +13,7 @@ console.log(nome1);
 
 // Modando o valor da variavel
 nome1 = 'Marconi';
-console.log(nome2);
+console.log(nome1);
 
 /*    REGRAS
 Não podemos criar variáveis com palavras resevadas

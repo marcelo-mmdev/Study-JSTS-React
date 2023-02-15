@@ -36,7 +36,7 @@ console.log(contador)
 console.log('------------------------------------------------')
 
 let contador1 = 10;
-console.log(contador1--); // Ele primeiro faz a ação, nno caso aqui contador1 já tem o valor de 2
+console.log(contador1--); // Ele primeiro faz a ação, no caso aqui contador1 já tem o valor de 2
 console.log(contador1);
 console.log('------------------------------------------------')
 
