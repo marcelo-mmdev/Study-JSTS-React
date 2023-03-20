@@ -1,0 +1,43 @@
+Instalação e Configuração do SONAR
+testes unitarios
+
+1-) Baixando sonarQuebe Community https://www.sonarqube.org/downloads/ 
+2-) Descompact o arquivo em um local de sua preferencia
+3-) Navegue na pasta da sua instalação do sonar sonarqube-9.6.0.59041 -> sonarqube-9.6.0.59041 -> bin -> windows-x86-64
+4-) Starta o arquivo StartSonar.bat
+5-) Se aparecer uma mensagem de segurança escolha a opção Executar assim mesmo
+6-) Navegue em http://localhost:9000/ 
+7-) No usuario e senha coloque admin admin
+8-) No formulario Update your password preencha o campo Old Password com "admin" e os campos New Password e Confirm Password com uma senha que quiser
+9-) No diretorio do maven navege até o arquivo \maven\apache-maven-x.x.x-bin\apache-maven-x.x.x\conf\settings.xml
+10-) Localize a tag <profiles>
+11-) Dentro da tag <profiles> adcione o trecho abaixo, alterando a senha que foi definida no passo 8
+      <profile>
+        <id>sonar</id>
+        <activation>
+            <activeByDefault>true</activeByDefault>
+        </activation>
+        <properties>
+            <!-- as mesmas que você viu no pom.xml! -->
+            <!-- O endereço que leva à sua instalação do Sonar -->
+            <sonar.host.url>http://localhost:9000/</sonar.host.url>
+            <!-- O login do seu usuário -->
+            <sonar.login>admin</sonar.login>
+            <!-- a senha de acesso deste usuário -->
+            <sonar.password>123qwe!@#</sonar.password>
+        </properties>
+      </profile>
+12-) Navegue em https://sonarqube.tjsc.jus.br/profiles?language=java para fazer o download do perfil "Perfil Java TJSC"
+13-) No fim da linha que tiver o Perfil Java TJSC clique na seta que estiver apontada para baixo e realize o backup, isso vai fazer um download de um arquivo xml
+14-) Em http://localhost:9000/profiles no canto superior direito clique em Restore, selecione o arquivo xml gerado no passo 13 e continue o processo de restaurar
+15-) No terminal de sua preferencia navegue até a pasta raiz do seu projeto
+16-) Execute os sequintes comandos na ordem mostrada.
+    -> mvn clean
+    -> mvn clean install
+    -> mvn sonar:sonar
+17-) Navegue em http://localhost:9000/projects e o projeto do sustentação oral já deverá ser listado
+18-) Se o sonarQube não tiver atualizando o projeto conforme as mudanças realizada no código, repita o passo 16
+19-) Se optar por alterar a porta, na pasta confi abre o arquivo sonar.properties descomente a linha que tiver sonar.web.port e atribui a porta que quiser
+
+
+https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.6.1.59531.zip
