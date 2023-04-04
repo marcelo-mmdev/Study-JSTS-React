@@ -1,0 +1,2 @@
+Controle bom para PC(XBox)
+  - 389,25 ("https://pt.aliexpress.com/item/1005005184919561.html?srcSns=sns_Copy&spreadType=socialShare&bizType=ProductDetail&social_params=20887034171&aff_fcid=4daefbba2ee0427f8be2d2b87267841b-1680305463017-03822-_mrChT5c&tt=MG&aff_fsk=_mrChT5c&aff_platform=default&sk=_mrChT5c&aff_trace_key=4daefbba2ee0427f8be2d2b87267841b-1680305463017-03822-_mrChT5c&shareId=20887034171&businessType=ProductDetail&platform=AE&terminal_id=fdf4c52064054d5ea74e8c3835a21fbd&afSmartRedirect=y")
